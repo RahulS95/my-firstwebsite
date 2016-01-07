@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html lang="en" ng-app="application">
+    
+  <head>
+      <style>
+  
+         #sub-nav {border-right: 1px solid #d0d0d0;}
+  
+            #feed {border-left: 1px solid #d0d0d0;}
+
+            .player {border-top: 1px solid #d0d0d0;}
+
+             .player .menu-bar {margin-bottom: 0;}
+             
+              .search_input{ 
+                background:  #ffffff;
+                height: 24px;
+                        
+            }
+            .search_button{
+                background:  #FAFAFA;
+                color:  #ff0000;
+                   border-bottom-left-radius:   10px;
+                   border-top-right-radius:     10px;
+                   width: 70px;
+                   height: 20px;
+                   
+            }
+         
+               </style>
+        
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+   <title>MusicGuru</title>
+ 
+    <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+    
+      <script src="assets/js/app.js"></script>
+    
+          <script src="assets/js/routes.js"></script>
+        
+    <script src="assets/js/angular.js"></script>
+ 
+    </head>
+
+ 
+  
+  <body>
+
+     
+    <div class="grid-frame vertical">
+  
+      <div class="dark title-bar">
+            <div class="center title">
+               <a ui-sref="home">MusicGuru</a></div>
+ 
+                <span class="left hide-for-medium"><a zf-toggle="sub-nav">Menu</a></span>
+   
+                 <div class="right">
+                       <form action="http://www.google.co.in" target="_blank">                    
+         <input type="text"  size="45" placeholder="s.e.a.r.c.h" class="search_input"/>
+         <input type="submit"  value="Search"  class="search_button"/>            
+          </form>
+        
+                 </div>
+             </div>
+        
+         <div class="main-menu-holder">
+         <ul class="main-menu">
+        <li class="active">    
+            <a ui-sref="home">home</a> </li>
+        <li class="active">    
+            <a href="bollywood song.html">Bollywood song</a> </li>
+        <li class="active">    
+            <a href="edm.html">EDM</a> </li>
+        <li class="active">    
+            <a href="punjabi.html">Punjabi/Bhangra</a> </li>
+        <li class="active">    
+            <a href="english.html">English</a> </li>
+        <li class="active">    
+            <a href="singles.html">singles</a> </li>
+       <li class="active">    
+            <a href="https://www.facebook.com/MusicGuru.Updates"  target="_blank"> <img src="imagei/fb.png" alt="image" width="30" height="10"></a></li>
+       <li class="active">    
+            <a href="https://twitter.com/MusicGuru"  target="_blank"><img src="imagei/twitter.jpg" alt="image" width="30" height="10"></a></li>
+       <li class="active">    
+            <a href="http://plus.google.com/MusicGuruNameplus/"  target="_blank"><img src="imagei/google.jpg" alt="image" width="30" height="10"></a></li>
+     </ul> 
+        </div>
+
+<div ng-class="['ui-animation' ]" ui-view class="grid-block">
+
+      </div>
+    
+       <div class="grid-block shrink player">
+  
+        <div class="small-12 medium-3 content">
+ 
+          <ul class="menu-bar">
+
+
+          </ul>
+   
+     </div>
+   
+        <div class="medium-6 content show-for-medium">
+ 
+         <ul class="menu-bar">
+     
+       
+        </ul>
+ 
+       </div>
+   
+
+        <div class="medium-3 content show-for-medium">
+ 
+         <ul class="menu-bar">
+
+   
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+              
+            <div class="abc">
+          <footer align="right">
+              <br><br>
+               &COPY; 2014-2015 MusicGuru.com-All Rights Reserved.
+          </footer>
+      </div>
+ 
+  
+          </body>
+
+         </html>
+
