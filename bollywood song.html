@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MusicGuru</title>          <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+            <script src="assets/js/app.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+          <script src="assets/js/routes.js"></script>
+        
+    <script src="assets/js/angular.js"></script>
+ 
+          <style>
+                 .search_input{
+                background:  #ffffff;
+                height: 22px;
+                        
+            }
+            .search_button{
+                background:  #FAFAFA;
+                color:  #ff0000;
+                   border-bottom-left-radius:   10px;
+                   border-top-right-radius:     10px;
+                   width: 70px;
+                   height: 20px;
+                
+            }
+                #sub-nav {border-right: 1px solid #d0d0d0;}
+                .songs-lists2 li{width:180px;height:85px;line-height:110px;border-bottom:5px dotted #e2e3e5;list-style:none;display:block;}
+.songs-lists2{width:640px;height:auto;display:block;float:left;margin:0 10px 20px 0;background:#fff;}
+          
+   #left{  float:left;
+                        width:350px;
+                }
+                #right{
+                    float: right;
+                    margin-right: 80px;
+                }
+              
+
+           
+          </style>
+   
+    </head>
+    <body>
+          <div class="grid-frame vertical">
+  
+      <div class="dark title-bar">
+            <div class="center title">
+               <a href="index.html">MusicGuru</a></div>
+ 
+                <span class="left hide-for-medium"><a zf-toggle="sub-nav">Menu</a></span>
+   
+                 <div class="right">
+                       <form action="http://www.google.co.in" target="_blank">                    
+         <input type="text"  size="45" placeholder="s.e.a.r.c.h" class="search_input"/>
+         <input type="submit"  value="Search"  class="search_button"/>            
+          </form>
+        
+                 </div>
+             </div>
+        
+         <div class="main-menu-holder">
+         <ul class="main-menu">
+        <li class="active">    
+            <a href="index.html">home</a> </li>
+        <li class="active">    
+            <a href="bollywood song.html">Bollywood song</a> </li>
+        <li class="active">    
+            <a href="edm.html">EDM</a> </li>
+        <li class="active">    
+            <a href="punjabi.html">Punjabi/Bhangra</a> </li>
+        <li class="active">    
+            <a href="english.html">English</a> </li>
+        <li class="active">    
+            <a href="singles.html">SINGLES</a> </li>
+           <li class="active">    
+            <a href="https://www.facebook.com/MusicGuru.Updates"  target="_blank"> <img src="imagei/fb.png" alt="image" width="30" height="10"></a></li>
+       <li class="active">    
+            <a href="https://twitter.com/MusicGuru"  target="_blank"><img src="imagei/twitter.jpg" alt="image" width="30" height="10"></a></li>
+       <li class="active">    
+            <a href="http://plus.google.com/MusicGuruNameplus/"  target="_blank"><img src="imagei/google.jpg" alt="image" width="30" height="10"></a></li>
+    
+     </ul> 
+        </div>
+              
+              
+              
+              
+                 <div ng-class="['ui-animation' ]" ui-view class="grid-block">
+                     <div zf-panel position="left" id="sub-nav" class="fast bounceInOut medium-2 medium-grid-block vertical">
+      
+ 	<div class="grid-content">
+		<li class="icon-left vertical menu-bar">
+                                     <br> 
+                    <h3>NAVIGATION</h3>
+                      <br/>
+		  <li><a href="index.html"> HOME</a></li>
+                  <br/>
+		  <li><a href="contactus.html"> CONTACT US</a></li>
+                  <br/>
+		  <li><a href="aboutus.html"> ABOUT US</a></li>
+                   <br/>
+       		</li>
+
+        	</div>
+
+	<div class="grid-content shrink now-playing">
+            <div class="ex">musicguru.com is an easy way to listen and download music. you can find your favorite songs in our multimillion database of quality mp3 links. we provide fast and relevant search. you can also post music in your blog or personal site. hope you enjoy staying here!</div>
+            <br>
+	</div>
+                     </div>                   
+               <div class="grid-container">
+                    <br /><br>
+                    <h1> Downlaod BOLLYWOOD SONG </h1> 
+                    <br/>   
+                    <p>MusicGuru offers the latest collection of Audio Bollywood soundtracks. You may listen or download to latest indian, bollywood, pop mp3 single tracks that are into top charts music category. </p>
+                    <br/><br> <br/><br>
+                    
+                     <ul class="songs-lists2">
+                                    <div id ="main">
+                        <div id ="left">
+                         <li><a href="badlapur.html"><img src="imagei/box.png" alt="image" width="25" height="10"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BADLAPUR</b></a>
+                            <li><a href="nh10.html"><img src="imagei/box.png" alt="image" width="25" height="10"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NH10</b></a>
+                                <li><a href="leela ek paheli.html"><img src="imagei/box.png" alt="image" width="25" height="10"><b>&nbsp;EK PAHELI LEELA</b></a>
+                                        
+                        </div>
+                                        <div id="right">
+                                              <li><a href="roy.html"><img src="imagei/box.png" alt="image" width="25" height="10"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ROY</b></a>
+                                                  <li><a href="heybro.html"><img src="imagei/box.png" alt="image" width="25" height="10"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HEYBRO</b></a>
+                                                  <li><a href="hawaizaada.html"><img src="imagei/box.png" alt="image" width="25" height="10"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HAWAIZAADA</b></a>
+                                        </div>
+                                    </div>
+                     </ul>
+               </div>
+                 </div>
+          </div>
+            <br><br/>  <br><br/>  <br><br/>
+                  <div class="abc">
+          <footer align="right">
+              <br><br>
+               &COPY; 2014-2015 MusicGuru.com-All Rights Reserved.
+          </footer>
+      </div>
+       
+                    </body>
+                    </html>
+                    
