@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MusicGuru</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+            <script src="assets/js/app.js"></script>
+    
+          <script src="assets/js/routes.js"></script>
+        
+    <script src="assets/js/angular.js"></script>
+ 
+          <style>
+                 .search_input{
+                background:  #ffffff;
+                height: 22px;
+                        
+            }
+            .search_button{
+                background:  #FAFAFA;
+                color:  #ff0000;
+                   border-bottom-left-radius:   10px;
+                   border-top-right-radius:     10px;
+                   width: 70px;
+                   height: 20px;
+                
+            }
+                #sub-nav {border-right: 1px solid #d0d0d0;}
+          
+
+           
+          </style>
+   
+    </head>
+    <body>
+          <div class="grid-frame vertical">
+  
+      <div class="dark title-bar">
+            <div class="center title">
+               <a href="index.html">MusicGuru</a></div>
+ 
+                <span class="left hide-for-medium"><a zf-toggle="sub-nav">Menu</a></span>
+   
+                 <div class="right">
+                       <form action="http://www.google.co.in" target="_blank">                    
+         <input type="text"  size="45" placeholder="s.e.a.r.c.h" class="search_input"/>
+         <input type="submit"  value="Search"  class="search_button"/>            
+          </form>
+        
+                 </div>
+             </div>
+        
+         <div class="main-menu-holder">
+         <ul class="main-menu">
+        <li class="active">    
+            <a href="index.html">home</a> </li>
+        <li class="active">    
+            <a href="bollywood song.html">Bollywood song</a> </li>
+        <li class="active">    
+            <a href="edm.html">EDM</a> </li>
+        <li class="active">    
+            <a href="punjabi.html">Punjabi/Bhangra</a> </li>
+        <li class="active">    
+            <a href="english.html">English</a> </li>
+        <li class="active">    
+            <a href="singles.html">SINGLES</a> </li>
+           <li class="active">    
+            <a href="https://www.facebook.com/MusicGuru.Updates"  target="_blank"> <img src="imagei/fb.png" alt="image" width="30" height="10"></a></li>
+       <li class="active">    
+            <a href="https://twitter.com/MusicGuru"  target="_blank"><img src="imagei/twitter.jpg" alt="image" width="30" height="10"></a></li>
+       <li class="active">    
+            <a href="http://plus.google.com/MusicGuruNameplus/"  target="_blank"><img src="imagei/google.jpg" alt="image" width="30" height="10"></a></li>
+    
+     </ul> 
+        </div>
+              
+              
+              
+              
+                 <div ng-class="['ui-animation' ]" ui-view class="grid-block">
+                     <div zf-panel position="left" id="sub-nav" class="fast bounceInOut medium-2 medium-grid-block vertical">
+      
+ 	<div class="grid-content">
+		<li class="icon-left vertical menu-bar">
+                                     <br> 
+                    <h3>NAVIGATION</h3>
+                      <br/>
+		  <li><a href="index.html"> HOME</a></li>
+                  <br/>
+		  <li><a href="contactus.html"> CONTACT US</a></li>
+                  <br/>
+		  <li><a href="aboutus.html"> ABOUT US</a></li>
+                   <br/>
+       		</li>
+
+        	</div>
+
+	<div class="grid-content shrink now-playing">
+            <div class="ex">musicguru.com is an easy way to listen and download music. you can find your favorite songs in our multimillion database of quality mp3 links. we provide fast and relevant search. you can also post music in your blog or personal site. hope you enjoy staying here!</div>
+            <br>
+	</div>
+                     </div>                   
+             
+
+          	<div class="grid-container">
+                    <br /><br>
+                    <h4> Contact Us & Give your feedback </h4>
+                    <br><br/>
+                    <h4> Contact Us</h4>
+                    <br/>
+             <form action="#" method="post">
+        <table>
+          <tr>
+              <td>Name : </td>
+              <td><input type="text" placeholder="Name" size="45" style="height:20px; " required> </td>
+          </tr>
+          <tr>
+              <td>E-Mail : </td>
+              <td><input type="text" placeholder="E-Mail"  style="height:20px;" required></td>
+          </tr>
+             <tr>
+              <td>Description : </td>
+              <td><input type="text"  style="height:190px; width: 490px;" required></td>
+          </tr>
+       
+           <tr>
+              <td><input type="submit" value="Submit"></td>
+          </tr>
+           </table>             
+               </form>
+                    <br/><br>
+                    <hr>
+                     <br/><br>
+                    <h5>Contact :</h5>
+                   <br/><br/>
+                   <h6>Rahul Singh Shekhawat/Manager Songs[MusicGuru]</h6>
+                   <p>  B-5 ICE FACTORY Road,&nbsp; INDIA  </p>
+                   <br>
+                   <h6>Support Team [MusicGuru]</h6>
+                   <h6>Anirudh Khurana,Tamilnadu,(India)</h6>
+                   <br/><br/>
+                   
+                     <h4>By E-Mail:</h4>
+                     <br/>
+       <ul>
+           
+           <li>  
+               <a href="mailto:rahulshekhawat.138@gmail.com" target="_blank" > Rahul@MusicGuru.com</a>
+           </li>
+       </ul>
+       <br>
+                       </div>    
+         </div>
+      </div>
+        
+        
+         <div class="abc">
+          <footer align="right">
+              <br><br>
+               &COPY; 2014-2015 MusicGuru.com-All Rights Reserved.
+          </footer>
+      </div>
+
+    </body>
+</html>
